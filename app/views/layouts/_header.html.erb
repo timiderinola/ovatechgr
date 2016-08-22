@@ -1,0 +1,45 @@
+<header id="navbar" class="navbar navbar-default" role="navigation">
+    <div id="links_container">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" id="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <nav class="collapse navbar-collapse" id="navbar-collapse">
+          <ul id="nav-links" class="nav navbar-nav text-center navbar-center">
+            <li>
+              <%= nav_link_to root_path do %>
+                  <strong>HOME</strong><br>
+                  <i class="fa fa-home fa-2x"></i>
+              <% end %>
+            </li>
+            <li>
+              <%= nav_link_to about_path do %>
+                  <strong>ABOUT</strong><br>
+                  <i class="fa fa-file-text-o fa-2x"></i>
+              <% end %>
+            </li>
+            <li>
+              <%= nav_link_to services_path do %>
+                      <strong>SERVICES</strong><br>
+                  <i class="fa fa-suitcase fa-2x"></i>
+              <% end %>
+            </li>
+            <li>
+              <%= nav_link_to contact_path do %>
+                  <strong>CONTACT</strong><br>
+                  <i class="fa fa-envelope fa-2x"></i>
+              <% end %>
+            </li>
+          </ul>
+        </nav><!-- /.navbar-collapse -->
+      </div>
+    </div><!-- /.container-fluid -->
+</header>
