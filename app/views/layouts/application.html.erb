@@ -11,11 +11,7 @@
       <%= csrf_meta_tags %>
     </head>
     <body>
-        <div class="container">
-          <div id="top-logo">
-            <%= link_to (image_tag 'name.png', alt: 'OVATECHGR', class: 'logo'), root_path %>
-          </div>
-          <%= render 'layouts/header' %>
+        <div>
           <%= render 'shared/flash_msg' %>
           <div>
             <%= yield %>

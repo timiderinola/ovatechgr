@@ -1,0 +1,21 @@
+@media screen and (max-width: 530px) {
+
+    .belt h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .belt h2 {
+        font-size: 1em;
+    }
+
+    .belt li {
+        display: block;
+    }
+
+    .belt li:nth-child(even) {
+        display: none;
+    }
+}
