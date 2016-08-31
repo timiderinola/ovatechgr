@@ -137,10 +137,10 @@ a.selected i {
 }
 
 .logo {
-    position: relative;
+    /*position: relative;*/
     height: 3em;
-    width: auto;
-    margin: auto;
+    /*width: auto;*/
+    /*margin: auto;*/
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;

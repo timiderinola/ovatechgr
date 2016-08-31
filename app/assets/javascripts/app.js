@@ -2,15 +2,11 @@ $(document).ready(function() {
 
     $('#navbar').scrollToFixed({
         preFixed: function() {
-            $('#nav-links strong').slideUp(50);
-            $('.logo').css('height', '2em');
-            $('#links_container').css('padding', '0');
+            $('#nav-links strong').css('color', 'transparent');
             $(this).css('opacity', '1');
         },
         postFixed: function() {
-            $('#nav-links strong').slideDown(50);
-            $('.logo').css('height', '3em');
-            $('#links_container').css('padding', '1em 0');
+            $('#nav-links strong').css('color', 'white');
             $(this).css('opacity', '0.5');
         }
     });

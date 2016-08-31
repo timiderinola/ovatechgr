@@ -8,15 +8,8 @@
 }
 
 #background-container {
-    background: url('Business-Backgrounds-HD-0.jpg') no-repeat;
+    background: url('business.jpg') no-repeat;
     background-size: cover;
-}
-
-#pictures .item img {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .welcome {
@@ -28,7 +21,12 @@
 
 .intro {
     margin-left: 7em;
+    width: 370px;
     font-weight: bolder;
+    padding: 2em;
+    background: #1E38B8;
+    color: #ffffff;
+    opacity: 0.7;
 }
 
 .belt {
@@ -39,6 +37,10 @@
     color: #ffffff;
     margin-top: 5em;
     padding: 1em 0 2.5em;
+}
+
+.highlighted {
+    color: #1E38B8;
 }
 
 .owl-pagination {
@@ -54,7 +56,6 @@
     font-size: 2em;
     font-weight: bold;
     margin: 0.5em 0;
-    color: #ffffff;
 }
 
 .belt h2 {
@@ -86,7 +87,6 @@
 
 .intro p {
     font-size: 1.2em;
-    color: #ffffff;
 }
 
 
