@@ -1,45 +1,165 @@
-<div id="background-container">
-  <div id="top-logo">
+<%= render 'layouts/carousel' %>
 
-  </div>
-  <%= render 'layouts/header' %>
-  <%= render 'layouts/carousel' %>
-</div>
-<br xmlns="http://www.w3.org/1999/html">
-<div class="container">
-  <div id="row-2" class="row text-center">
-    <br>
-    <div class="col-sm-4 text-left block-details">
-      <p class="text-center big pull-left">F</p>
-      <h4 class="service-heading">Food<br>Services</h4>
-      <br>
-      <p>
-        We offer a variety of services in Nutrition balancing, Food Fortifications, Food Value Addition. Your animals
-        are also not left out
-      </p>
-      <a class="btn btn-default">FIND OUT MORE</a>
-    </div>
-
-    <div class="col-sm-4 text-left block-details">
-      <p class="text-center big pull-left">M</p>
-      <h4 class="service-heading">Machinery<br>Experts</h4>
-      <br>
-      <p>
-        We are leaders in machine design, fabrication, and plant layout installations. You just tell us what
-        your needs are!
-      </p>
-      <a class="btn btn-default">FIND OUT MORE</a>
-    </div>
-
-    <div class="col-sm-4 text-left block-details">
-      <p class="text-center big pull-left">C</p>
-      <h4 class="service-heading">Seasoned<br>Consultants</h4>
-      <br>
-      <p>
-        Do you need advice on equipment choice, product development and on technical issues? You are
-        at the right place. Contact us today!
-      </p>
-      <a class="btn btn-default">FIND OUT MORE</a>
+<section class="callaction">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="big-cta">
+          <div class="cta-text">
+            <h2><span>Ovatech</span> Global Resources</h2>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="box">
+              <div class="box-gray aligncenter">
+                <h4>Food Services</h4>
+                <div class="icon">
+                  <i class="fa fa-cutlery fa-3x"></i>
+                </div>
+                <p>
+                  We offer a variety of services in Nutrition balancing, Food Fortifications,
+                  Food Value Addition. Your livestock are also not left out.
+                </p>
+
+              </div>
+              <div class="box-bottom">
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">
+              <div class="box-gray aligncenter">
+                <h4>Machinery Services</h4>
+                <div class="icon">
+                  <i class="fa fa-wrench fa-3x"></i>
+                </div>
+                <p>
+                  We are leaders in machine design, fabrication, and plant layout installations.
+                  You just tell us what your needs are!
+                </p>
+
+              </div>
+              <div class="box-bottom">
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">
+              <div class="box-gray aligncenter">
+                <h4>Printing Services</h4>
+                <div class="icon">
+                  <i class="fa fa-print fa-3x"></i>
+                </div>
+                <p>
+                  Whatever you're printing, wherever you are, whenever you need it. Our quality is unbeatable,
+                  our pricing is reasonable.
+                </p>
+
+              </div>
+              <div class="box-bottom">
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">
+              <div class="box-gray aligncenter">
+                <h4>Excellent Delivery</h4>
+                <div class="icon">
+                  <i class="fa fa-thumbs-up fa-3x"></i>
+                </div>
+                <p>
+                  People say all our services are delivered with a great delivery of excellence. Why don't you find
+                  for yourself?
+                </p>
+
+              </div>
+              <div class="box-bottom">
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- divider -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="solidline">
+        </div>
+      </div>
+    </div>
+    <!-- end divider -->
+    <!-- Portfolio Projects -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h4 class="heading">Recent Works</h4>
+        <div class="row">
+          <section id="projects">
+            <ul id="thumbs" class="portfolio">
+              <!-- Item Project and Filter Name -->
+              <li class="col-lg-3 design" data-id="id-0" data-type="web">
+                <div class="item-thumbs">
+                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                  <%= link_to image_path('1.jpg'), class: 'hover-wrap fancybox',title: 'Work 1', data: {:fancybox_group => 'gallery'} do %>
+                      <span class="overlay-img"></span>
+                      <span class="overlay-img-thumb font-icon-plus"></span>
+                  <% end %>
+                  <!-- Thumb Image and Description -->
+                  <%= image_tag '1.jpg', alt: 'First Work' %>
+                </div>
+              </li>
+              <!-- End Item Project -->
+              <!-- Item Project and Filter Name -->
+              <li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                <%= link_to image_path('2.jpg'), class: 'hover-wrap fancybox',title: 'Work 2', data: {:fancybox_group => 'gallery'} do %>
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                <% end %>
+                <!-- Thumb Image and Description -->
+                <%= image_tag '2.jpg', alt: 'Second Work' %>
+              </li>
+              <!-- End Item Project -->
+              <!-- Item Project and Filter Name -->
+              <li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                <%= link_to image_path('3.jpg'), class: 'hover-wrap fancybox',title: 'Work 3', data: {:fancybox_group => 'gallery'} do %>
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                <% end %>
+                <!-- Thumb Image and Description -->
+                <%= image_tag '3.jpg', alt: 'Third Work' %>
+              </li>
+              <!-- End Item Project -->
+              <!-- Item Project and Filter Name -->
+              <li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                <%= link_to image_path('4.jpg'), class: 'hover-wrap fancybox',title: 'Work 4', data: {:fancybox_group => 'gallery'} do %>
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                <% end %>
+                <!-- Thumb Image and Description -->
+                <%= image_tag '4.jpg', alt: 'Fourth Work' %>
+              </li>
+              <!-- End Item Project -->
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

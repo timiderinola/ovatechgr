@@ -3,6 +3,7 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="" />
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic' rel='stylesheet' type='text/css'>
       <%= favicon_link_tag 'favicon.png' %>
       <title>Ovatech Global Resources</title>
@@ -11,12 +12,14 @@
       <%= csrf_meta_tags %>
     </head>
     <body>
-        <div>
+        <div id="wrapper">
           <%= render 'shared/flash_msg' %>
+          <%= render 'layouts/header' %>
           <div>
             <%= yield %>
           </div>
           <%= render 'layouts/footer' %>
         </div>
+        <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
     </body>
 </html>

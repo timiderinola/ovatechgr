@@ -14,4 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.turbolinks
+//= require jquery-1.11.1
+//= require jquery.easing.1.3
+//= require bootstrap.min
+//= require jquery.fancybox.pack
+//= require jquery.fancybox-media
+//= require prettify
+//= require jquery.quicksand
+//= require portfolio_setting
+//= require jquery
+//= require jquery.flexslider
+//= require animate
+//= require custom
 //= require_tree .

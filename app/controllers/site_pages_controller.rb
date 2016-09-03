@@ -10,4 +10,7 @@ class SitePagesController < ApplicationController
 
   def contact
   end
+
+  def blog
+  end
 end

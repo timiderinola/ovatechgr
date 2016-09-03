@@ -1,46 +1,51 @@
-<header id="navbar" class="navbar navbar-default" role="navigation">
-    <div id="links_container">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header" id="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <%= link_to (image_tag 'name.png', alt: 'OVATECHGR', class: 'logo img img-responsive'), root_path %>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <nav class="collapse navbar-collapse" id="navbar-collapse">
-          <ul id="nav-links" class="nav navbar-nav text-center navbar-right">
-            <li>
-              <%= nav_link_to root_path do %>
-                  <strong>HOME</strong><br>
-                  <i class="fa fa-home fa-2x"></i>
-              <% end %>
-            </li>
-            <li>
-              <%= nav_link_to about_path do %>
-                  <strong>ABOUT</strong><br>
-                  <i class="fa fa-file-text-o fa-2x"></i>
-              <% end %>
-            </li>
-            <li>
-              <%= nav_link_to services_path do %>
-                      <strong>SERVICES</strong><br>
-                  <i class="fa fa-suitcase fa-2x"></i>
-              <% end %>
-            </li>
-            <li>
-              <%= nav_link_to contact_path do %>
-                  <strong>CONTACT</strong><br>
-                  <i class="fa fa-envelope fa-2x"></i>
-              <% end %>
-            </li>
-          </ul>
-        </nav><!-- /.navbar-collapse -->
+<header>
+  <div id="navbar" class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to (image_tag 'name_blue.png', alt: 'OVATECHGR', class: 'logo'), root_path, class: 'navbar-brand' %>
       </div>
-    </div><!-- /.container-fluid -->
+      <div class="navbar-collapse collapse ">
+        <ul class="nav navbar-nav text-center">
+          <li>
+            <%= nav_link_to root_path do %>
+                <strong>HOME</strong><br>
+                <i class="fa fa-home fa-2x"></i>
+            <% end %>
+          </li>
+          <li>
+            <%= nav_link_to about_path do %>
+                <strong>ABOUT</strong><br>
+                <i class="fa fa-file-text-o fa-2x"></i>
+            <% end %>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><strong>SERVICES </strong><b class="fa fa-caret-down"></b>
+              <br><i class="fa fa-suitcase fa-2x"></i></a>
+            <ul class="dropdown-menu">
+              <li><%= nav_link_to 'Food Services', services_path %></li>
+              <li><%= nav_link_to 'Machinery', services_path %></li>
+              <li><%= nav_link_to 'Printing', services_path %></li>
+            </ul>
+          </li>
+          <li>
+            <%= nav_link_to blog_path do %>
+                <strong>BLOG</strong><br>
+                <i class="fa fa-envelope fa-2x"></i>
+            <% end %>
+          </li>
+          <li>
+            <%= nav_link_to contact_path do %>
+                <strong>CONTACT</strong><br>
+                <i class="fa fa-envelope fa-2x"></i>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>

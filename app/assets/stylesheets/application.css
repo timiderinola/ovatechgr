@@ -11,6 +11,9 @@
  * file per style scope.
  *
  *= require bootstrap
+ *= require jquery.fancybox
+ *= require flexslider
+ *= require style
  *= require font-awesome
  *= require_tree .
  *= require_self

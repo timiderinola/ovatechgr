@@ -4,8 +4,9 @@ Rails.application.routes.draw do
 
   get '/about', to: 'site_pages#about'
   get '/services', to: 'site_pages#services'
-
+  get '/blog', to: 'site_pages#blog'
   get '/contact', to: 'contacts#new'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
